@@ -1,0 +1,25 @@
+package oo.polimorfismo;
+
+public abstract class Alimento {
+	
+	private double peso;
+
+	public Alimento(double peso) {
+		super();
+		this.peso = peso;
+	}
+	
+	public Alimento() {
+		
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		if(peso > 0) {			
+			this.peso = peso;
+		}
+	}
+}
